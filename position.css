@@ -1,0 +1,47 @@
+#box1 {
+	border: 1px solid black;
+	width: 300px;
+	height: 300px;
+	background: skyblue;
+
+	/* fixed: reference viewport position, like absolute but absolute can ref from parent */
+	/* sticky: reference when viewport position come in  */
+
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	float: left;
+	margin-right: 20px;
+}
+
+#box2 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	background: tomato;
+
+	/* If box not have parent element, default will be viewport position */
+	/* If box have parent element, position within its parent */
+	position: absolute;
+	top: 100px;
+	left: 100px;
+}
+
+#box3 {
+	border: 1px solid black;
+	width: 300px;
+	height: 300px;
+	background: greenyellow;
+
+	position: relative;
+}
+
+#box4 {
+	border: 1px solid black;
+	width: 100px;
+	height: 100px;
+	background: gold;
+
+	position: fixed;
+	top: 0px;
+}
