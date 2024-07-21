@@ -1,0 +1,31 @@
+body {
+	background-image: url('unsplash-image.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+h1 {
+	font-family: 'Press Start 2P', 'consolas', sans-serif;
+
+	background: linear-gradient(to right, skyblue, #00ff73);
+	background-clip: text;
+	color: transparent;
+}
+
+p {
+	background-color: rgba(17, 17, 17, 0.5);
+	backdrop-filter: blur(5px);
+
+	color: #00ff73;
+	font-family: 'consolas', sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+
+	border-style: outset;
+	border-width: 5px;
+	border-color: gold;
+	border-radius: 15px;
+	padding: 10px;
+}
