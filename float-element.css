@@ -1,0 +1,15 @@
+img {
+	float: right;
+}
+
+p {
+	clear: left;
+}
+
+.img-left {
+	float: left;
+}
+
+.p-left {
+	clear: right;
+}
