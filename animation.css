@@ -1,0 +1,104 @@
+body {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 20px 0px;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6 {
+	border: 1px solid;
+	width: 50%;
+	height: 250px;
+	background: red;
+	font-size: 225px;
+	text-align: center;
+}
+
+#box1 {
+	/* animation */
+	/* 
+    animation: slide;
+	animation-play-state: running;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	animation-timing-function: ease-in-out;
+	animation-duration: 5s; 
+    */
+
+	/* animation with combine above method */
+	/* param -> duration, timing, delay, iteration, play-state, animation */
+	animation: 5s ease-in-out 0s infinite running slide;
+}
+
+#box2:hover {
+	animation: 2s ease-in-out 0s infinite running color-changed;
+}
+
+#box3 {
+	animation: 2s ease-in-out 0s infinite running opacity;
+}
+
+#box4 {
+	animation: 2s ease-in-out 0s infinite running rotate;
+}
+
+#box5 {
+	animation: 2s ease-in-out 0s infinite running myScale;
+}
+
+#box6 {
+	height: unset;
+	animation: 2s ease-in-out 0s infinite running color-changed;
+}
+
+@keyframes slide {
+	from {
+		margin-left: 100%;
+	}
+	to {
+		margin-left: 0%;
+	}
+}
+
+@keyframes rotate {
+	50% {
+		transform: rotateZ(90deg);
+	}
+}
+
+@keyframes opacity {
+	50% {
+		opacity: 0;
+	}
+}
+
+@keyframes myScale {
+	50% {
+		transform: scale(0.5, 0.5);
+	}
+}
+
+@keyframes color-changed {
+	20% {
+		background-color: orange;
+	}
+	40% {
+		background-color: yellow;
+	}
+	60% {
+		background-color: green;
+	}
+	80% {
+		background-color: blue;
+	}
+	100% {
+		background-color: purple;
+	}
+}
