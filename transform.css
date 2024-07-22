@@ -1,0 +1,57 @@
+body {
+	width: 100%;
+	height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#box1 {
+	border: 1px solid;
+	width: 250px;
+	height: 250px;
+	font-size: 255px;
+	text-align: center;
+	background: lightskyblue;
+
+	/* translate position of element for X, Y */
+	/* translate(px, px) */
+	transform: translateX(50px);
+	transform: translateY(50px);
+	transform: translate(50px, 50px);
+
+	/* rotate element for degree */
+	/* rotateX(deg) -> 360 deg on X axis */
+	transform: rotateX(0deg);
+	/* rotateY(deg) -> 360 deg on Y axis */
+	transform: rotateY(0deg);
+	/* rotateZ(deg) -> 360 deg on Z axis */
+	transform: rotateZ(180deg);
+
+	/* scale element size -> scale(num) */
+	/* Note: center point of element still the same */
+	transform: scaleX(1);
+	transform: scaleY(1);
+	transform: scale(2, 2);
+
+	/* skew element -> เอียง */
+	/* Note: center point of element still the same */
+	/* skew(deg) */
+	transform: skewX(0deg);
+	transform: skewY(0deg);
+	transform: skew(0deg, 0deg);
+
+	/* matrix is combine above transformation into one method */
+	/* combine the following:
+    matrix(
+        scaleX(num),
+        skewY(deg),
+        skewX(deg),
+        scaleY(num),
+        translateX(px),
+        translateY(px)
+    )
+    */
+	transform: matrix(1, 0, 0, 1, 0, 0);
+}
