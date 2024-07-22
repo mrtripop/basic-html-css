@@ -1,0 +1,13 @@
+#text-shadow {
+	/* text-shadow: first style, second style */
+	/* text-shadow: x y blur color */
+	text-shadow: -2px 5px 5px red, 2px -5px 5px gold;
+}
+
+#box-shadow {
+	/* box-shadow: first style, second style */
+	/* box-shadow: x y blur color */
+	box-shadow: -2px 5px 10px gold, 2px -5px 10px greenyellow;
+	/* display: inline-block -> tell style effect only content, not entire line */
+	display: inline-block;
+}
